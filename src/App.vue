@@ -7,6 +7,7 @@
           <span class="text-blue">GESTOR DE TAREAS</span>
         </router-link>
 
+<!-- 
         <button
           type="button"
           @click="toggleNavbar"
@@ -17,8 +18,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+-->
 
-        <div :class="['collapse navbar-collapse', { show: !isNavbarCollapsed }]" id="navbarNav">
+
+          <!-- 
+          <div :class="['collapse navbar-collapse', { show: !isNavbarCollapsed }]" id="navbarNav">
+          -->
+          <div>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <router-link class="nav-link text-white d-flex align-items-center" to="/addtask">
@@ -39,10 +45,14 @@
         </div>
       </div>
     </nav>
+    <!-- 
     <router-view :tasks="tasks" @add-task="addTask" @delete-task="deleteTask" />
+  -->
+
+    <router-view />
   </div>
 </template>
-
+<!-- 
 <script>
 //import axios from "axios";
 
@@ -88,7 +98,7 @@ export default {
   
 };
 </script>
-
+-->
 <style>
 #app {
   font-family: 'Roboto', sans-serif;
