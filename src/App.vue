@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import axios from "axios";
+//import axios from "axios";
 
 export default {
   data() {
@@ -63,6 +63,7 @@ export default {
     deleteTask(taskId) {
       this.tasks = this.tasks.filter(task => task.id !== taskId);
     },
+/*
     fetchTasks() {
       axios
         .get("https://dummyjson.com/todos")
@@ -75,11 +76,16 @@ export default {
         .catch((error) => {
           console.error("Error fetching tasks:", error);
         });
-    },
+    },*/
+
+
   },
+  /*
   created() {
     this.fetchTasks();
-  },
+  },*/
+
+  
 };
 </script>
 

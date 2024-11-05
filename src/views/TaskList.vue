@@ -29,7 +29,7 @@ export default {
         };
     },
     methods: {
-       
+    
         fetchTasks() {
             axios
                 .get("https://dummyjson.com/todos")
